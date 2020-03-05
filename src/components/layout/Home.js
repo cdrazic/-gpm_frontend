@@ -4,21 +4,41 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 export default class Home extends Component {
+  renderLogoutButton() {
+    if (this.state.loginSuccess === true) {
+      //change this conditional when login implemented
+      return (
+        <a href='/home' onClick='logOut()'>
+          <button class='button'>Log Out</button>
+        </a>
+      );
+    }
+  }
+
+  logOut() {
+    //log out function here
+  }
+
   render() {
     return (
-      <div className='MainContainer'>
-        {/* Banner image */}
-        <div className='banner'></div>
+      <div class='MainContainer'>
+        <div class='banner'></div>
 
-        <div className='ContentContainer'>
-          <div className='Content'>
+        <div class='ContentContainer'>
+          <div class='Content'>
             <h1 className='page-title'>CS Graduate Program Manager</h1>
-
-            {/* <a href='/admin'>
+            <a href='/login'>
+              <button class='button'>Log In</button>
+            </a>
+            {this.renderLogoutButton}
+            <a href='/todo'>
+              <button className='button'>Todos</button>
+            </a>
+            <a href='/admin'>
               <button id='bypass' className='button'>
                 BYPASS
               </button>
-            </a> */}
+            </a>
             <p>Select the tab for your student status</p>
 
             <Tabs>
@@ -27,7 +47,7 @@ export default class Home extends Component {
                 <Tab>Current Students</Tab>
               </TabList>
               <TabPanel>
-                <h2 className='tabBody'>Info for Prospective Students</h2>
+                <h2 class='tabBody'>Info for Prospective Students</h2>
                 <p>
                   General Application Questions:
                   <ul>
@@ -72,7 +92,7 @@ export default class Home extends Component {
                   </ul>
                 </p>
                 <p>
-                Admissions and program details can be found here:
+                  Admissions and program details can be found here:
                   <a href='https://gradschool.wwu.edu/computer-science'>
                     {' '}
                     https://gradschool.wwu.edu/computer-science
@@ -103,6 +123,27 @@ export default class Home extends Component {
               </TabPanel>
               <TabPanel>
                 <h2 class='tabBody'>Info for Current Students</h2>
+                <p>
+                  Academic Resources
+                  <ul>
+                    <li>I am starting my first quarter. What should I do?</li>
+                    <li>How many courses a quarter should I take?</li>
+                    <li>What are the basic requirements for the degree?</li>
+                    <li>Can the credits I took in BS count toward my MS?</li>
+                    <li>As a graduate student, can I take a 400 level course and use it to fulfill my MS degree requirement?</li>
+                    <li>What should I do if I want to register for the research course (CSCI 692)?</li>
+                    <li>I am planning to graduate next quarter. What is the graduation application and approval process?</li>
+                    <li>What should I do if I need to change my plan of study?</li>
+                    <li>What should I do if I want to take an independent study?</li>
+                    <li>Forms</li>
+                  </ul>
+                  TAships and other funding opportunities:
+                  <ul>
+                    <li>Graduate School Teaching Assistant Guidelines</li>
+                    <li>What awards are available from the graduate school?</li>
+                    <li>What awards are available from the CS department?</li>
+                  </ul>
+                </p>
                 <p>
                   Important to-dos for your first and last quarter: (not done)
                 </p>
