@@ -29,7 +29,50 @@ export default class Home extends Component {
               <TabPanel>
                 <h2 className='tabBody'>Info for Prospective Students</h2>
                 <p>
-                Testing change propagation:
+                  General Application Questions:
+                  <ul>
+                    <li>Am I eligible to apply?</li>
+                    <li>Do I need a degree in Computer Science to be admitted to the program?</li>
+                    <li>Can I apply to start in Winter or Spring quarter?</li>
+                    <li>How do I apply? (What documents do I need to submit for my application?)</li>
+                    <li>What are the deadlines for the application?</li>
+                    <li>(What criteria are used to evaluate applicants for admission to the department?)</li>
+                  </ul>
+
+                  Language Proficiency Tests:
+                  <ul>
+                    <li>Do I need to take the GRE test?</li>
+                    <li>Are there minimum GRE scores required for admission and can I submit my GRE scores after the deadline?</li>
+                    <li>Do I need to take the TOEFL test? Are there minimum TOEFL/IELTS scores and can I submit my scores after the deadline?</li>
+                    <li>When should I take the GRE/TOEFL?</li>
+                    <li>I am currently in the CS honors program and thinking to apply for the Graduate Program. How should I apply?</li>
+                  </ul>
+                  Transfer Questions:
+                  <ul>
+                    <li>If I already have a MS in CS from another institute, may I apply to the CS MS program at WWU?</li>
+                    <li>If I am currently enrolled in a graduate program at another institution. May I apply for the CS MS program at WWU? Are my credits transferable?</li>
+                  </ul>
+                  If admitted:
+                  <ul>
+                    <li>If I am admitted to the program, can I defer admission?</li>
+                    <li>Can a course I took somewhere else (e.g., an online program) be waived from the prerequisite course list I will be required to take?</li>
+                    <li>What are the MS degree requirements?</li>
+                    <li>How long does it take to complete the program? Can I complete my degree part time?</li>
+                    <li>How can I find out more about course requirements for the CS Master’s program?</li>
+                  </ul>
+                  Fees and Funding/Financial Support:
+                  <ul>
+                    <li>What are tuition and fees? What if I’m an international student?</li>
+                    <li>Do you offer financial support for MS students?</li>
+                  </ul>
+                  Recommendation Letters:
+                  <ul>
+                    <li>How should my recommenders send their letters?</li>
+                    <li>I’ve been working for several years and it’s difficult to get 3 letters of recommendation from former professors. Will you accept letters from my employer or supervisors?</li>
+                  </ul>
+                </p>
+                <p>
+                Admissions and program details can be found here:
                   <a href='https://gradschool.wwu.edu/computer-science'>
                     {' '}
                     https://gradschool.wwu.edu/computer-science
