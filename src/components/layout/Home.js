@@ -29,7 +29,7 @@ export default class Home extends Component {
               <TabPanel>
                 <h2 className='tabBody'>Info for Prospective Students</h2>
                 <p>
-                  Admissions and program details can be found here:
+                Testing change propagation:
                   <a href='https://gradschool.wwu.edu/computer-science'>
                     {' '}
                     https://gradschool.wwu.edu/computer-science
