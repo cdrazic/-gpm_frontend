@@ -50,10 +50,6 @@ export default class Home extends Component {
                 <h2 class='tabBody'>Info for Prospective Students</h2>
                 <p>
                   Admissions and program details can be found here:
-                  <a href='https://gradschool.wwu.edu/computer-science'>
-                    {' '}
-                    https://gradschool.wwu.edu/computer-science
-                  </a>
                   <br></br>
                   If you are a CS honors student, please follow the normal
                   application procedure to apply to the Graduate Program.
